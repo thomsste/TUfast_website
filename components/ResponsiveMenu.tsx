@@ -1,36 +1,39 @@
-import { Button, Divider, Drawer, Dropdown, Menu } from 'antd'
-import { DownOutlined, MenuOutlined, GlobalOutlined } from '@ant-design/icons'
-import Link from 'next/link'
-import React, { useState } from 'react'
-import styles from '../styles/ResponsiveMenu.module.scss'
-import { LanguageSwitcher, useTranslation } from 'next-export-i18n'
-import Rocket from './Rocket'
-import SubMenu from 'antd/lib/menu/SubMenu'
+import { Button, Divider, Drawer, Dropdown, Menu } from "antd";
+import { MenuOutlined } from "@ant-design/icons";
+import Link from "next/link";
+import React, { useState } from "react";
+import styles from "../styles/ResponsiveMenu.module.scss";
+import { LanguageSwitcher, useTranslation } from "next-export-i18n";
+import SubMenu from "antd/lib/menu/SubMenu";
+import { IconLanguage, IconChevronDown, IconMenu } from "@tabler/icons-react";
+import { useBrowser } from "../components/useBrowser";
 
 export type MenuItem = {
-  key: string
-  href: string
-  text: string
-}
+  key: string;
+  href: string;
+  text: string;
+};
 
 export type MenuProps = {
-  menuItems: MenuItem[]
-  siteKey?: string
-}
+  menuItems: MenuItem[];
+  siteKey?: string;
+};
 
 const ResponsiveMenu: React.FC<MenuProps> = ({ menuItems, siteKey }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
+
+  const browser = useBrowser();
 
   const languageSelector = (
     <Menu>
-      <LanguageSwitcher lang="de">
-        <Menu.Item key="de">{t('language.de')}</Menu.Item>
+      <LanguageSwitcher class="language" lang="de">
+        <Menu.Item key="de">{t("language.de")}</Menu.Item>
       </LanguageSwitcher>
-      <LanguageSwitcher lang="en">
-        <Menu.Item key="en">{t('language.en')}</Menu.Item>
+      <LanguageSwitcher class="language" lang="en">
+        <Menu.Item key="en">{t("language.en")}</Menu.Item>
       </LanguageSwitcher>
     </Menu>
-  )
+  );
 
   const [visible, setVisible] = useState(false);
 
@@ -38,16 +41,14 @@ const ResponsiveMenu: React.FC<MenuProps> = ({ menuItems, siteKey }) => {
     <>
       <Link href="/" passHref>
         <a className={styles.logo}>
-          <Rocket style={{ verticalAlign: 'baseline', marginBottom: -3 }} />
-          <span> TUfast</span>
+          <img src="/tufast_logo.svg" alt="Logo" />
         </a>
       </Link>
-
       <Menu
-        theme="dark"
+        theme="light"
         mode="horizontal"
         defaultSelectedKeys={siteKey ? [siteKey] : []}
-        style={{ fontSize: '1rem', flex: 'auto' }}
+        style={{ fontSize: "1rem", flex: "auto" }}
         selectable={false}
         className={styles.desktop}
       >
@@ -57,23 +58,57 @@ const ResponsiveMenu: React.FC<MenuProps> = ({ menuItems, siteKey }) => {
           </Menu.Item>
         ))}
       </Menu>
-
       <Dropdown
         overlay={languageSelector}
-        trigger={['click']}
+        trigger={["click"]}
         className={`${styles.languageSelector} ${styles.desktop}`}
       >
-        <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
-          {t('language.selector')} <DownOutlined />
+        <a
+          className={`${styles.languageSelectorInner} ant-dropdown-link`}
+          onClick={(e) => e.preventDefault()}
+        >
+          <IconLanguage /> Sprache <IconChevronDown />
         </a>
       </Dropdown>
-
+      <a href={browser.url} target={"_blank"} rel="noreferrer">
+        <div>
+          <span
+            className={`${styles.heroButtonText} ${styles.heroButton} ${styles.desktop}`}
+          >
+            {t("index.installPromptHeader")}{" "}
+            <img
+              src={browser.icon}
+              alt=""
+              loading="lazy"
+              className={styles.browserIcon}
+            />{" "}
+            {browser.name} {t("index.installPromptBehindHeader")} &rarr;
+          </span>
+        </div>
+      </a>{" "}
       {/* mobile */}
+      <a href={browser.url} target={"_blank"} rel="noreferrer">
+        <div>
+          <span
+            className={`${styles.heroButtonText} ${styles.heroButton} ${styles.mobile}`}
+            style={{ marginRight: "1rem" }}
+          >
+            {t("index.installPromptHeader")}{" "}
+            <img
+              src={browser.icon}
+              alt=""
+              loading="lazy"
+              className={styles.browserIcon}
+            />{" "}
+            {browser.name} {t("index.installPromptBehindHeader")} &rarr;
+          </span>
+        </div>
+      </a>{" "}
       <Button
         type="text"
         onClick={() => setVisible(true)}
         icon={<MenuOutlined style={{ fontSize: 24 }} />}
-        style={{ margin: 'auto 0', color: 'white' }}
+        style={{ margin: "auto 0", color: "black" }}
         className={styles.mobile}
       />
       <Drawer
@@ -82,13 +117,13 @@ const ResponsiveMenu: React.FC<MenuProps> = ({ menuItems, siteKey }) => {
         visible={visible}
         className={styles.mobile}
         bodyStyle={{ padding: 0 }}
-        contentWrapperStyle={{ maxWidth: '100vw' }}
+        contentWrapperStyle={{ maxWidth: "100vw" }}
       >
         <Menu
           defaultSelectedKeys={siteKey ? [siteKey] : []}
           mode="inline"
           selectable={false}
-          style={{ fontSize: '1rem' }}
+          style={{ fontSize: "1rem" }}
         >
           <Divider />
           {menuItems.map((item) => (
@@ -97,19 +132,18 @@ const ResponsiveMenu: React.FC<MenuProps> = ({ menuItems, siteKey }) => {
             </Menu.Item>
           ))}
           <Divider />
-
-          <SubMenu icon={<GlobalOutlined />} title={t('language.selector')}>
+          <SubMenu icon={<IconLanguage />} title={t("language.selector")}>
             <LanguageSwitcher lang="de">
-              <Menu.Item key="de">{t('language.de')}</Menu.Item>
+              <Menu.Item key="de">{t("language.de")}</Menu.Item>
             </LanguageSwitcher>
             <LanguageSwitcher lang="en">
-              <Menu.Item key="en">{t('language.en')}</Menu.Item>
+              <Menu.Item key="en">{t("language.en")}</Menu.Item>
             </LanguageSwitcher>
           </SubMenu>
         </Menu>
       </Drawer>
     </>
   );
-}
+};
 
-export default ResponsiveMenu
+export default ResponsiveMenu;
