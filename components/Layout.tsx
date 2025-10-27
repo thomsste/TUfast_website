@@ -32,11 +32,6 @@ const TUfastLayout: NextPage<LayoutProps> = ({ children, site, siteKey }) => {
       href: "mailto:frage@tu-fast.de",
       icon: FaEnvelope,
     },
-    {
-      text: "Matrix",
-      href: "https://matrix.to/#/#tu-fast:tu-dresden.de",
-      icon: SiMatrix,
-    },
     { text: "Datenschutz", href: "/datenschutz", icon: () => <></> },
   ];
 

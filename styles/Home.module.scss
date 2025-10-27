@@ -7,6 +7,11 @@
   margin-bottom: 100px;
   gap: 2rem;
 
+  :global(a) {
+    color: var(--tuf-accent) !important;
+    pointer-events: auto !important;
+  }
+
   .availableFor p {
     font-size: 14px;
     position: relative;
@@ -31,7 +36,8 @@
   .heroTitle {
     text-transform: none;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3rem;
+    line-height: 1.25;
     display: inline;
     position: relative;
     color: white;
@@ -78,9 +84,10 @@
     opacity: 0.5;
   }
 
-  .heroTextWrapper {
+  .heroTitleWrapper {
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 0.65rem;
   }
 
   .rocketLogo {

@@ -121,11 +121,12 @@ const Home: NextPage = () => {
       <div className={styles.mainWrapper}>
         <div id="home">
           <div className={styles.hero}>
-            <div className={styles.heroTextWrapper}>
+            <div className={styles.heroTitleWrapper}>
               <h1 className={styles.heroTitle}>
                 {t("index.mainHeadingTUfast")}
               </h1>
-              <br />
+            </div>
+            <div className={styles.heroSubTextWrapper}>
               <p className={styles.heroSubText}>
                 {t("index.subHeading")} <br />
                 {t("index.heroShorts")}
@@ -213,7 +214,7 @@ const Home: NextPage = () => {
                   {t("index.safetyDataTitle")}
                 </h3>
                 <span className={styles.featuresCardText}>
-                  {t("index.safetyDataText")}
+                  <Markdown content={t("index.safetyDataText")} />
                 </span>
               </div>
             </div>{" "}
@@ -227,7 +228,7 @@ const Home: NextPage = () => {
                   {t("index.safetyMoneyTitle")}
                 </h3>
                 <span className={styles.featuresCardText}>
-                  {t("index.safetyMoneyText")}
+                  <Markdown content={t("index.safetyMoneyText")} />
                 </span>
                 <span className={styles.featuresCardTextHelper}></span>
               </div>{" "}

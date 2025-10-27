@@ -10,7 +10,7 @@
     "features": "Funktionen"
   },
   "index": {
-    "mainHeadingTUfast": "Weniger Klickstress",
+    "mainHeadingTUfast": "Dein Produktivitätstool für die TU Dresden",
     "subHeading": "Mit TUfast navigierst du schneller durch die Online Tools der TU Dresden",
     "heroShorts": "Für Studierende, von Studierenden   ·   Kostenlos   ·   Open-Source",
     "installPrompt": "Zu",
@@ -29,14 +29,14 @@
     "featureImproveText": "Öffne Dokumente direkt im Browser, verbessertes Layout, Notenverteilung und Versuchstracker",
     "safetySectionTitle": "Ist TUfast sicher?",
     "safetyDataTitle": "Datenspeicherung ausschließlich lokal",
-    "safetyDataText": "TU FAST speichert nutzerbezogene Daten ausschließlich lokal auf deinem Gerät. Wenn du die Erweiterung löschst, werden auch alle deine Daten gelöscht. Weitere Informationen findest du in unserer Datenschutzerklärung.",
+    "safetyDataText": "TU FAST speichert nutzerbezogene Daten ausschließlich lokal auf deinem Gerät. Wenn du die Erweiterung löschst, werden auch alle deine Daten gelöscht. Weitere Informationen findest du in unserer [Datenschutzerklärung](https://tu-fast.de/datenschutz).",
     "safetyMoneyTitle": "Kostenlos & Open Source",
-    "safetyMoneyText": "TUfast ist ein Open-Source Projekt. Das bedeutet wir arbeiten 100% transparent. Du kannst dir den Code jederzeit selbst auf GitHub anschauen und mitwirken. TUfast ist für dich kostenlos.",
+    "safetyMoneyText": "TUfast ist ein [Open-Source Projekt](https://github.com/TUfast-TUD/TUfast_TUD). Das bedeutet wir arbeiten 100% transparent. Du kannst dir den Code jederzeit selbst auf GitHub anschauen und mitwirken. TUfast ist für dich kostenlos.",
     "aboutSectionTitle": "Warum ist Online Studieren so kompliziert?",
     "aboutText": [
       "An der TU Dresden jonglieren wir täglich mit OPAL, Selma, Hisqis oder Outlook und verlieren dabei Zeit und Nerven. Also haben wir uns gefragt: Geht das nicht einfacher? Aus dieser Frage entstand TUfast. Zuerst als kleines Nebenprojekt im Studium, dann als wachsende Plattform, die schnell immer mehr Studierende erreichte. Was mit ein paar Zeilen Code begann, wurde zu einer gemeinsamen Mission: den digitalen Studienalltag an der TU Dresden leichter zu machen.",
-      "Heute ist TUfast ein Open-Source-Projekt von Studierenden und Alumni der TU Dresden. Es wird von über 4000 Studierenden an der TU Dresden genutzt. Alle die am Projekt mitwirken, tun das ehrenamtlich und mit dem Wunsch anderen Studierenden, die Online Lehre ein Stück leichter zu machen.",
-      "Unterstützt wird das Projekt unter anderem vom **DigitalAcceleratorProgramm des Stifterverbands**, der **output.dd Projektschau** der Informatik-Fakultät, **mehreren Fachschaftsräten** der TU Dresden sowie netten Sponsoren und Sponsorinnen auf [BuyMeACoffee](https://www.buymeacoffee.com/olihausdoerfer). Am Ziel sind wir noch nicht: Unser nächster Schritt ist es, TUfast weiter auszubauen – für die TU Dresden, für andere Hochschulen in Sachsen und für alle, die in der digitalen Lehre ein bisschen mehr Struktur und Leichtigkeit brauchen.",
+      "Heute ist TUfast ein Open-Source-Projekt von Studierenden und Alumni der TU Dresden. Es wird von über 4000 Studierenden und Mitarbeitenden an der TU Dresden genutzt. Alle die am Projekt mitwirken, tun das ehrenamtlich und mit dem Wunsch anderen Studierenden, die Online Lehre ein Stück leichter zu machen.",
+      "Unterstützt wird das Projekt unter anderem vom [DigitalAcceleratorProgramm des Stifterverbands](https://www.stifterverband.org/digitalchangemaker-accelerator), der [output.dd Projektschau](https://output-dd.de/blog/project-post/tufast-tu-dresden-2/) der Informatik-Fakultät, mehreren Fachschaftsräten der TU Dresden sowie netten Sponsoren und Sponsorinnen auf [BuyMeACoffee](https://www.buymeacoffee.com/olihausdoerfer). Am Ziel sind wir noch nicht: Unser nächster Schritt ist es, TUfast weiter auszubauen – für die TU Dresden, für andere Hochschulen in Sachsen und für alle, die in der digitalen Lehre ein bisschen mehr Struktur und Leichtigkeit brauchen.",
       "**Von Studierenden, für Studierende. Kostenlos und Open Source.**"
     ],
     "teamSectionTitle": "Das Team",
@@ -89,6 +89,51 @@
         ]
       },
       {
+        "status": "Aktiv",
+        "name": "AKORA",
+        "role": "Entwicklung TUfast",
+        "image": "https://avatars.githubusercontent.com/u/65976562",
+        "studies": "Studium Bachelor Informatik",
+        "occupancy_in_tufast": "Verbesserungen in Selma",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/A-K-O-R-A"
+          }
+        ]
+      },
+      {
+        "status": "Aktiv",
+        "name": "Tom",
+        "role": "Entwicklung TUfast",
+        "image": "https://avatars.githubusercontent.com/u/65157178",
+        "studies": "Studium Bachelor Informatik",
+        "occupancy_in_tufast": "TUfast für Safari Browser",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/t0mbrn"
+          }
+        ]
+      },
+      {
+        "status": "Aktiv",
+        "name": "Steen Thomsen",
+        "role": "Design",
+        "image": "https://avatars.githubusercontent.com/u/199160993",
+        "studies": "Studium Angewandte Informatik",
+        "occupancy_in_tufast": "Redesign 2025, Design, Frontend",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/thomsste"
+          }
+        ]
+      },
+      {
         "status": "Ehemalig",
         "name": "Jan Polzer",
         "image": "https://hausdoerfer.de/jpolzer.jpg",
@@ -134,56 +179,6 @@
       },
       {
         "status": "Aktiv",
-        "name": "AKORA",
-        "role": "Entwicklung TUfast",
-        "image": "https://avatars.githubusercontent.com/u/65976562",
-        "studies": "Studium Bachelor Informatik",
-        "occupancy_in_tufast": "Verbesserungen in Selma",
-        "links": [
-          {
-            "type": "github",
-            "title": "GitHub",
-            "url": "https://github.com/A-K-O-R-A"
-          }
-        ]
-      },
-      {
-        "status": "Aktiv",
-        "name": "Tom",
-        "role": "Entwicklung TUfast",
-        "image": "https://avatars.githubusercontent.com/u/65157178",
-        "studies": "Studium Bachelor Informatik",
-        "occupancy_in_tufast": "TUfast für Safari Browser",
-        "links": [
-          {
-            "type": "github",
-            "title": "GitHub",
-            "url": "https://github.com/t0mbrn"
-          }
-        ]
-      },
-      {
-        "status": "Aktiv",
-        "name": "Steen Thomsen",
-        "role": "Design",
-        "image": "https://avatars.githubusercontent.com/u/199160993",
-        "studies": "Studium Angewandte Informatik",
-        "occupancy_in_tufast": "Redesign 2025, Design, Frontend",
-        "links": [
-          {
-            "type": "github",
-            "title": "GitHub",
-            "url": "https://github.com/thomsste"
-          },
-          {
-            "type": "other",
-            "title": "Website",
-            "url": "https://steenthomsen.de"
-          }
-        ]
-      },
-      {
-        "status": "Aktiv",
         "name": "Du?",
         "role": "Über GitHub kann jede·r bei dem Projekt mitmachen!",
         "image": "https://tu-fast.de/member-github.png",
@@ -206,8 +201,8 @@
   },
   "jobs": {
     "content": [
-      "Das Coole an TUfast? **Echte Softwareentwicklung für über 4000 Studierende!**\nÜber **GitHub** kann jede·r mitentwickeln. Von kleinen Fixes bis zu neuen Features. ",
-      "Wenn du mitmachen willst, schreib uns an frage@tu-fast.de oder bei [matrix](https://matrix.to/#/#tu-fast:tu-dresden.de).\nOder starte direkt auf [GitHub](https://github.com/TUfast-TUD/TUfast_TUD) (siehe [Contributing.md](https://github.com/TUfast-TUD/TUfast_TUD/blob/main/CONTRIBUTING.md)).",
+      "Das Coole an TUfast? **Echte Softwareentwicklung für über 4000 Studierende und Mitarbeitende!**\nÜber **GitHub** kann jede·r mitentwickeln. Von kleinen Fixes bis zu neuen Features. ",
+      "Wenn du mitmachen willst, schreib uns an [frage@tu-fast.de](mailto:frage@tu-fast.de).\nOder starte direkt auf [GitHub](https://github.com/TUfast-TUD/TUfast_TUD) (siehe [Contributing.md](https://github.com/TUfast-TUD/TUfast_TUD/blob/main/CONTRIBUTING.md)).",
       "Hier findest du **Ideen zum Mitmachen**, wir freuen uns aber auch über deine eigenen Vorschläge! :)"
     ],
     "listings": [
