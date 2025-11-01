@@ -1,28 +1,86 @@
 .languageSelector {
-    padding: 0 20px;
+  padding: 0 20px;
+  float: right;
+}
+
+.languageSelectorInner {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--tuf-fakeblack);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.languageSelectorInner svg {
+  display: inline-block;
+  vertical-align: middle;
+  stroke: currentColor;
+}
+
+.heroButton {
+  background-color: var(--tuf-accent);
+  border-radius: 4px;
+  width: fit-content;
+  height: fit-content;
+  padding: 6px 12px;
+  color: white;
+  transition: background-color 300ms ease;
+}
+
+.heroButton:hover {
+  background-color: #0055ff;
+  transition: background-color 300ms ease;
+}
+
+.heroButtonText {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .logo {
-    float: left;
-    color: white;
-    font-size: 1.8rem;
-    margin-right: 20px;
+  float: left;
+  color: white;
+  margin-right: 1.5rem;
+}
+
+.browserIcon {
+  width: 16px;
+  height: 16px;
+  vertical-align: baseline;
+  margin-bottom: -3px;
+}
+
+.desktop {
+  // Allow the menu to shrink and trigger overflow earlier
+  min-width: 0 !important;
+  flex-shrink: 1 !important;
+
+  // Ensure overflow behavior works properly
+  :global(.ant-menu-overflow) {
+    flex-wrap: nowrap !important;
+  }
+
+  // Keep menu items from wrapping
+  :global(.ant-menu-item) {
+    white-space: nowrap;
+  }
 }
 
 // mobile
 @media screen and (max-width: 650px) {
-    .logo {
-        flex: auto;
-    }
+  .logo {
+    flex: auto;
+  }
 
-    .desktop {
-        display: none;
-    }
+  .desktop {
+    display: none;
+  }
 }
 
 // desktop
 @media screen and (min-width: 651px) {
-    .mobile {
-        display: none;
-    }
+  .mobile {
+    display: none;
+  }
 }

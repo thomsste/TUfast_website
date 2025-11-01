@@ -1,96 +1,357 @@
 .mainWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 164px); // 2*50px padding + 64 navbar
+  margin-bottom: 100px;
+  gap: 2rem;
+
+  :global(a) {
+    color: var(--tuf-accent) !important;
+    pointer-events: auto !important;
+  }
+
+  .availableFor p {
+    font-size: 14px;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    top: -5px;
+
+    &:lang(de) {
+      letter-spacing: 0.5px;
+    }
+    &:lang(en) {
+      letter-spacing: 0.5px;
+    }
+
+    a {
+      color: #0084ff !important;
+    }
+
+    a:hover {
+      color: #4faaff !important;
+    }
+
+    @media screen and (max-width: 650px) {
+      letter-spacing: 0.2px !important;
+    }
+  }
+
+  .ctaBanner .availableFor a {
+    color: var(--tuf-accent) !important;
+  }
+
+  .heroTitle {
+    text-transform: none;
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    display: inline;
+    position: relative;
+    color: white;
+
+    // since has br didnt work
+    @media screen and (max-width: 810px) {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    @media screen and (max-width: 650px) {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+  }
+
+  .heroSubTitle {
+    text-transform: none;
+    font-weight: 600;
+    font-size: 2rem;
+    display: inline;
+    position: relative;
+    color: white;
+    line-height: 1.3;
+
+    @media screen and (max-width: 650px) {
+      font-size: 2rem;
+      top: 0px;
+    }
+  }
+
+  .heroSubText {
+    color: var(--tuf-white-75);
+    margin: 0;
+
+    @media screen and (max-width: 810px) {
+      margin-top: 16px;
+    }
+
+    @media screen and (max-width: 650px) {
+      margin-top: 16px;
+    }
+  }
+
+  .heroButtonLink {
     justify-content: center;
-    min-height: calc(100vh - 164px); // 2*50px padding + 64 navbar
-    margin-bottom: 100px;
-    /*padding: 0 min(20vw - 100px, 100px);*/ // 2*50px padding //top&bottom right&left
-    gap: min(20vh - 200px, 70px); // 2*50 padding + 64 navbar + 36 margin offset
+    display: flex;
+  }
 
-    .availableFor p {
-        font-size: 14px;
-        position: relative;
-        top: -5px;
+  .heroShortsWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
 
-        &:lang(de) {
-            letter-spacing: 1.7px;
-        }
-        &:lang(en) {
-            letter-spacing: 1.5px;
-            left: 3px;
-        }
+  .heroShorts {
+    padding: 4px 12px;
+    border-radius: 32px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--tuf-white-75);
+    border: 1px solid var(--tuf-white-35);
+    white-space: nowrap;
 
-        @media screen and (max-width: 650px) {
-            letter-spacing: 0.2px !important;
-        }
+    @media screen and (max-width: 800px) {
+      font-size: 12px;
+      white-space: normal;
+      text-align: center;
     }
+  }
 
-    .brandH {
-        text-transform: none;
-        font-weight: bolder;
-        font-size: 4.375rem;
-        display: inline;
-        position: relative;
-        top: -7px;
-        left: -5px;
+  .heroTitleWrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 
-        @media screen and (max-width: 650px) {
-            font-size: 3.5rem;
-        }
+  .rocketLogo {
+    height: 1.3em;
+    position: relative;
+    top: -5px;
+
+    @media screen and (max-width: 650px) {
+      top: -3px;
     }
+  }
 
-    .rocketLogo {
-        height: 1.3em;
-        position: relative;
-        top: -5px;
+  .newFeatureHint {
+    padding: 2px 8px;
+    border-radius: 32px;
+    border: 1px solid var(--tuf-white-15);
+    font-size: 14px;
+    font-weight: 300;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.08) 100%
+    );
+    color: var(--tuf-white);
 
-        @media screen and (max-width: 650px) {
-            top: -3px;
-        }
+    @media screen and (max-width: 650px) {
+      font-size: 14px;
     }
+  }
+
+  .newFeatureHintLink {
+    text-decoration: none;
+    color: inherit;
+    width: fit-content; /* Add this */
+    display: inline-block; /* Or this - either works */
+  }
+}
+
+.hero {
+  background-color: #000000;
+  background-image: linear-gradient(
+    to bottom,
+    #00008c 0%,
+    rgba(0, 0, 140, 0) 100%
+  );
+  border-radius: 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: fit-content;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media screen and (max-width: 800px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.heroButton {
+  background-color: var(--tuf-accent);
+  box-shadow: 0 0 1.2rem var(--tuf-accent);
+  border-radius: 4px;
+  width: fit-content;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  color: white;
+  transition: background-color 300ms ease;
+}
+
+.heroButton:hover {
+  background-color: #0055ff;
+  transition: background-color 300ms ease;
+}
+
+.heroButtonText {
+  font-size: 24px;
+  font-weight: 600;
+  @media screen and (max-width: 640px) {
+    font-size: 18px !important;
+  }
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 32px;
+  @media screen and (max-width: 640px) {
+    margin-left: 0px;
+  }
+}
+
+.infosgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 0px;
+  margin-top: 16px;
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 8px;
+  }
+}
+
+.infoCard {
+  height: 128px;
+  border-radius: 16px;
+  background-color: var(--tuf-lightblue);
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px; /* optional */
+}
+
+.infoCardIconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoCardTextWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 8px;
+  grid-row-gap: 0px;
+  margin-top: 16px;
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 8px;
+  }
+
+  @media screen and (max-width: 650px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 8px;
+  }
+}
+
+.featuresCard {
+  height: 260px;
+  border-radius: 16px;
+  background-color: var(--tuf-lightblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 16px;
+  height: 100%;
+  /* 
+  height: fit-content;
+  justify-content: center; */
+}
+
+.featuresCardTitle {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .scrollIndicator {
-    place-self: center;
-    position: absolute;
-    bottom: -50px;
-    width: 4rem;
-    height: 4rem;
-    animation: MoveUpDown 1.5s ease-in-out infinite;
-    cursor: pointer;
+  place-self: center;
+  position: absolute;
+  bottom: -50px;
+  width: 4rem;
+  height: 4rem;
+  animation: MoveUpDown 1.5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.ctaBanner {
+  background: linear-gradient(to right, #ffffff, #ccddff, #ffffff);
+  width: 100%;
+  padding: 4rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes MoveUpDown {
-    0%,
-    100% {
-        transform: translateY(4px);
-    }
-    50% {
-        transform: translateY(-4px);
-    }
+  0%,
+  100% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 .browserIcon {
-    width: 36px;
-    height: 36px;
-    vertical-align: baseline;
-    margin-bottom: -3px;
+  width: 24px;
+  height: 24px;
+  vertical-align: baseline;
+  margin-bottom: -3px;
+
+  @media screen and (max-width: 650px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .supporterLogos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 28px;
-    margin-bottom: 28px;
-    margin-top: 60px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 28px;
+  margin-top: 60px;
+  justify-content: center;
+  align-items: center;
 
-    a {
-        height: 60px;
-    }
-    img {
-        height: 100%;
-    }
+  a {
+    height: 60px;
+  }
+  img {
+    height: 100%;
+  }
 }

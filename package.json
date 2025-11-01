@@ -9,16 +9,17 @@
     "lint": "npx next lint"
   },
   "dependencies": {
+    "@tabler/icons": "^3.35.0",
+    "@tabler/icons-react": "^3.35.0",
     "antd": "^4.17.3",
     "next": "12.1.0",
     "next-export-i18n": "^1.4.1",
-    "phosphor-react": "^1.3.1",
     "react": "17.0.2",
     "react-device-detect": "^2.1.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.3.1",
     "react-markdown": "^8.0.0",
-    "sass": "^1.44.0",
+    "sass": "^1.93.2",
     "seedrandom": "^3.0.5"
   },
   "devDependencies": {

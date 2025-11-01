@@ -1,15 +1,15 @@
-import Layout from '../components/Layout'
-import Markdown from '../components/Markdown'
+import Layout from "../components/Layout";
+import Markdown from "../components/Markdown";
 
 const Datenschutz = () => {
   return (
     <Layout site="Datenschutz" siteKey="datenschutz">
       <Markdown content={content} />
-    </Layout >
-  )
-}
+    </Layout>
+  );
+};
 
-export default Datenschutz
+export default Datenschutz;
 
 const content = `
 ## Datenschutzerklärung für die TUfast TU Dresden Browsererweiterung
@@ -59,4 +59,4 @@ Der Quellcode dieser Erweiterung ist öffentlich, das heißt jeder kann den Code
 TUfast-Team
 Ansprechpartner: Oliver Hausdörfer
 [frage@tu-fast.de](mailto:frage@tu-fast.de)
-`
+`;

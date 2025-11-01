@@ -6,185 +6,241 @@
   },
   "nav": {
     "projectAndVision": "Project",
-    "jobs": "Ideas"
+    "jobs": "Participate",
+    "features": "Features"
   },
   "index": {
-    "mainHeadingTUfast": "TUfast",
-    "mainHeading": "The produc­tivity tool.",
-    "subHeading": "For TU Dresden students (and employees).",
-    "installPrompt": "Get it now for",
-    "availableFor": "Available for [Firefox]({{firefox}}), [Chrome]({{chrome}}) and [Edge]({{chrome}}) browsers",
-    "infoSection": "### By students, for students. Free & Open Source.\n**The #1 productivity tool for students at TU Dresden.**\n\n\nFind out more about the project below and install TUfast for your browser!"
+    "heroShortsPrice": "Free to use",
+    "heroShortsAuthor": "made by students",
+    "heroShortsOpen": "Open Source",
+    "mainHeadingTUfast": "Your productivity tool for\u00A0TU\u00A0Dresden",
+    "subHeading": "Navigate faster through TU\u00A0Dresden's\u00A0online\u00A0tools",
+    "installPrompt": "Add to",
+    "installPromptBehind": "now →",
+    "installPromptHeader": "Add to",
+    "installPromptBehindHeader": "now",
+    "availableFor": "available for [Chrome,]({{chrome}}) [Firefox]({{firefox}}) and [Edge]({{chrome}}) browser",
+    "newFeatureHint": "Now also available for Firefox Mobile",
+    "featureSectionTitle": "What can TUfast do?",
+    "featureLoginTitle": "Automatic login",
+    "featureLoginText": "Log in automatically to all online portals: selma, OPAL, SLUB, Mail, ...",
+    "featureNavTitle": "Improved navigation",
+    "featureNavText": "Quick access and hotkeys for many online portals",
+    "featureOpalTitle": "OPAL Overview",
+    "featureOpalText": "All your courses directly in your browser, without having to open OPAL",
+    "featureImproveTitle": "Improved selma & OPAL",
+    "featureImproveText": "Open documents directly in your browser, improved layout, grade distribution, and attempt tracker",
+    "safetySectionTitle": "Is TUfast secure?",
+    "safetyDataTitle": "Data is only stored locally",
+    "safetyDataText": "TU FAST stores user-related data only locally on your device. If you delete the extension, all your data will also be deleted. For more information, please refer to our [privacy policy](https://tu-fast.de/datenschutz).",
+    "safetyMoneyTitle": "Free & Open Source",
+    "safetyMoneyText": "TUfast is an [open-source project](https://github.com/TUfast-TUD/TUfast_TUD). This means we work with 100% transparency. You can view the code yourself on GitHub at any time and contribute. TUfast is free for you to use.",
+    "aboutSectionTitle": "Why is studying online so complicated?",
+    "aboutText": [
+      "At TU Dresden, we juggle OPAL, Selma, Hisqis, and Outlook every day, wasting time and fraying our nerves in the process. So we asked ourselves: Can't this be done more easily? This question gave rise to TUfast. It started as a small side project during our studies, then grew into a platform that quickly reached more and more students. What began with a few lines of code became a shared mission: to make everyday digital life at TU Dresden easier.",
+      "Today, TUfast is an open-source project run by students and alumni of TU Dresden. It is used by over 4,000 students at TU Dresden. Everyone involved in the project does so on a voluntary basis and with the desire to make online teaching a little easier for other students.",
+      "The project is supported by, among others, the [DigitalAcceleratorProgramm des Stifterverbands](https://www.stifterverband.org/digitalchangemaker-accelerator), the [output.dd project show](https://output-dd.de/blog/project-post/tufast-tu-dresden-2/) of the Faculty of Computer Science, several student councils at TU Dresden, and generous sponsors on [BuyMeACoffee](https://www.buymeacoffee.com/olihausdoerfer). We are not there yet: Our next step is to further expand TUfast—for TU Dresden, for other universities in Saxony, and for anyone who needs a little more structure and ease in digital teaching.",
+      "**By students, for students. Free and open source.**"
+    ],
+    "teamSectionTitle": "The Team",
+    "participateSectionTitle": "Help shape TUfast!"
   },
   "projectAndVision": {
-    "content": [
-      "## About the project",
-      "We create the perfect tool to make your student life easier! TUfast was released in May 2020 and has more than 3000 users as of 01.03.2023. The project is [open-source](https://github.com/TUfast-TUD/TUfast_TUD) and developed by students and alumni of TU Dresden. TUfast is not officially related with the TU Dresden. For all questions contact [frage@tu-fast.de](frage@tu-fast.de).",
-      "### What does TUfast do? 🚀",
-      "TUfast is a productivity tool, which supports students in their everyday life. With TUfast you can save up to 2000 Clicks and 90 minutes per semester!",
-      "To do this, TUfast provides a number of features to make your everyday studies easier, such as:",
-      "- AutoLogin to all online platforms\n - Quick-access and hotkeys for many platforms\n - Supports SELMA, OPAL, jExam and many more\n - Overview of all your OPAL-courses as well as improvements for OPAL itself.\n - ... and many more that you can discover in TUfast ;)",
-      "### Is TUfast secure? 🔐",
-      "The TUfast extension stores user data only locally on your device. If you uninstall the extension, all data will be deleted as well. Here you can find our [privacy policy](/datenschutz).",
-      "### Whats next? 🔮",
-      "We want to make TUfast available for 5000+ students at TU Dresden and for at least one more university in Saxony.",
-      "### Supporters ❤️",
-      "Supporters of the project:",
-      " - The [DigitalAcceleratorProgramm](https://www.stifterverband.org/digitalchangemaker-accelerator) of the Stifterverband\n - Exhibition of the Faculty of Computer Science at TU Dresden: [output-dd.de](https://output-dd.de/blog/project-post/tufast-tu-dresden-2/)\n - Kind sponsors on [BuyMeACoffee](https://www.buymeacoffee.com/olihausdoerfer)\n- Student councils",
-      "***"
-    ]
+    "content": ["", "***"]
   },
   "team": {
-    "h": "Team",
-    "active_devs": "Active Teammembers",
-    "former_devs": "Former Teammembers",
     "card": {
       "role": "Position",
       "studies": "Studies",
       "activity": "Work"
     },
-    "members": {
-      "active": [
-        {
-          "name": "Oliver Hausdörfer",
-          "image": "https://hausdoerfer.de/ohausdoerfer2.jpg",
-          "role": "Team Lead",
-          "studies": "PhD student. M.Sc. Robotics, TU Munich. Alumni B.Sc. Mechanical Engineering, TU Dresden.",
-          "occupancy_in_tufast": "Project management",
-          "links": [
-            {
-              "type": "github",
-              "title": "GitHub",
-              "url": "https://github.com/OliEfr"
-            },
-            {
-              "type": "other",
-              "title": "Website",
-              "url": "https://oliver.hausdoerfer.de/"
-            }
-          ]
-        },
-        {
-          "name": "Lennart Guderian",
-          "image": "https://lennart.guderian.de/images/other/Headshot_low.jpg",
-          "role": "Team Co-Lead",
-          "studies": "Dipl.-Ing. Mechatronics, TU Dresden",
-          "occupancy_in_tufast": "Design; development; front-end",
-          "links": [
-            {
-              "type": "github",
-              "title": "GitHub",
-              "url": "https://github.com/Noxdor"
-            }
-          ]
-        }
-      ],
-      "former": [
-        {
-          "name": "Jan Polzer",
-          "image": "https://hausdoerfer.de/jpolzer.jpg",
-          "role": "Marketing Lead",
-          "studies": "Alumni Medical studies, TU Dresden",
-          "occupancy_in_tufast": "Marketing; PR",
-          "links": []
-        },
-        {
-          "name": "Fugi",
-          "image": "https://www.gravatar.com/avatar/ba104599ebbe494f2f8a9e29ebcf0ed7?s=512",
-          "role": "Website Lead",
-          "studies": "Alumni B.Sc. Computer Science, TU Dresden",
-          "occupancy_in_tufast": "Development; backend; website",
-          "links": [
-            {
-              "type": "other",
-              "title": "Website",
-              "url": "https://fugi.dev"
-            }
-          ]
-        },
-        {
-          "name": "Daniel Kluge",
-          "role": "TUfast Development Lead",
-          "image": "https://avatars.githubusercontent.com/u/43993811",
-          "studies": "Alumni Dipl.-Ing. Information Systems Engineering, TU Dresden",
-          "occupancy_in_tufast": "Development; web-extension",
-          "links": [
-            {
-              "type": "github",
-              "title": "GitHub",
-              "url": "https://github.com/C0ntroller"
-            },
-            {
-              "type": "other",
-              "title": "Website",
-              "url": "https://c0ntroller.de"
-            }
-          ]
-        }
-      ]
-    }
+    "members": [
+      {
+        "status": "Active",
+        "name": "Oliver Hausdörfer",
+        "image": "https://hausdoerfer.de/ohausdoerfer2.jpg",
+        "role": "Team Lead",
+        "studies": "PhD student. M.Sc. Robotics, TU Munich. Alumni B.Sc. Mechanical Engineering, TU Dresden.",
+        "occupancy_in_tufast": "Project management",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/OliEfr"
+          },
+          {
+            "type": "other",
+            "title": "Website",
+            "url": "https://oliver.hausdoerfer.de/"
+          }
+        ]
+      },
+      {
+        "status": "Active",
+        "name": "Lennart Guderian",
+        "image": "https://avatars.githubusercontent.com/u/64439978",
+        "role": "Team Co-Lead",
+        "studies": "Dipl.-Ing. Mechatronics, TU Dresden",
+        "occupancy_in_tufast": "Design, development, front-end",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/Noxdor"
+          }
+        ]
+      },
+      {
+        "status": "Active",
+        "name": "AKORA",
+        "role": "Entwicklung TUfast",
+        "image": "https://avatars.githubusercontent.com/u/65976562",
+        "studies": "Studying Computer Science",
+        "occupancy_in_tufast": "Selma Improvements",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/A-K-O-R-A"
+          }
+        ]
+      },
+      {
+        "status": "Active",
+        "name": "Tom",
+        "role": "Entwicklung TUfast",
+        "image": "https://avatars.githubusercontent.com/u/65157178",
+        "studies": "Studying Computer Science",
+        "occupancy_in_tufast": "TUfast für Safari Browser",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/t0mbrn"
+          }
+        ]
+      },
+      {
+        "status": "Active",
+        "name": "Steen Thomsen",
+        "role": "Design",
+        "image": "https://avatars.githubusercontent.com/u/199160993",
+        "studies": "Studying Applied Computer Science",
+        "occupancy_in_tufast": "Redesign 2025, Design, Frontend",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/thomsste"
+          }
+        ]
+      },
+      {
+        "status": "Former",
+        "name": "Jan Polzer",
+        "image": "https://hausdoerfer.de/jpolzer.jpg",
+        "role": "Marketing Lead",
+        "studies": "Alumni Medical studies, TU Dresden",
+        "occupancy_in_tufast": "Marketing, PR",
+        "links": []
+      },
+      {
+        "status": "Former",
+        "name": "Fugi",
+        "image": "https://www.gravatar.com/avatar/ba104599ebbe494f2f8a9e29ebcf0ed7?s=512",
+        "role": "Website Lead",
+        "studies": "Alumni B.Sc. Computer Science, TU Dresden",
+        "occupancy_in_tufast": "Development, backend, website",
+        "links": [
+          {
+            "type": "other",
+            "title": "Website",
+            "url": "https://fugi.dev"
+          }
+        ]
+      },
+      {
+        "status": "Former",
+        "name": "Daniel Kluge",
+        "role": "TUfast Development Lead",
+        "image": "https://avatars.githubusercontent.com/u/43993811",
+        "studies": "Alumni Dipl.-Ing. Information Systems Engineering, TU Dresden",
+        "occupancy_in_tufast": "Development, web-extension",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/C0ntroller"
+          },
+          {
+            "type": "other",
+            "title": "Website",
+            "url": "https://c0ntroller.de"
+          }
+        ]
+      },
+      {
+        "status": "Active",
+        "name": "You?",
+        "role": "Anyone can participate in the project via GitHub!",
+        "image": "https://tu-fast.de/member-github.png",
+        "studies": "",
+        "occupancy_in_tufast": "Below you will find a few ideas, but feel free to contribute your own.",
+        "links": [
+          {
+            "type": "github",
+            "title": "GitHub",
+            "url": "https://github.com/TUfast-TUD/"
+          },
+          {
+            "type": "other",
+            "title": "Website",
+            "url": "https://tu-fast.de/#mitmachen"
+          }
+        ]
+      }
+    ]
   },
   "jobs": {
     "content": [
-      "## Ideas",
-      "**The best thing about TUfast?** Software development in real-life for more than 3000 students!",
-      "**If you're interested, you can just start developing!** It's best to coordinate with us on [GitHub](https://github.com/TUfast-TUD/TUfast_TUD), via email: frage@tu-fast.de, or in [matrix](https://matrix.to/#/#tu-fast:tu-dresden.de), if you want to develop a new feature. Also, check the [Contributing.md file](https://github.com/TUfast-TUD/TUfast_TUD/blob/main/CONTRIBUTING.md) on GitHub.",
-      "Here, we've gathered some ideas on how the project can evolve further. But we are always open to your suggestions and contributions!"
+      "What's cool about TUfast? **Real software development for over 4,000 students!**\nAnyone can contribute via **GitHub**. From small fixes to new features.",
+      "If you want to join us, write to us at [frage@tu-fast.de](mailto:frage@tu-fast.de).\nOr get started right away on [GitHub](https://github.com/TUfast-TUD/TUfast_TUD) (see [Contributing.md](https://github.com/TUfast-TUD/TUfast_TUD/blob/main/CONTRIBUTING.md)).",
+      "Here you will find ideas for getting involved, but we would also love to hear your own suggestions! :)"
     ],
     "listings": [
       {
         "title": "TUfast for Safari",
-        "tags": [
-          "Development"
-        ],
+        "tags": ["Development"],
         "content": "We get many requests that TUfast should also support Safari. You have experience with developing for macOS/Safari? Then do your fellow students a favor and take over the implementation! \n\n Learnings: Distribution of web extensions, web development, macOS/Safari"
       },
       {
         "title": "TUfast for mobile",
-        "tags": [
-          "Development"
-        ],
+        "tags": ["Development"],
         "content": "Service-Workers are the latest trend in web technologies - that's why we want to use them. This will enable us to make TUfast available for mobile devices and to add many new features. \n\n Learnings: Mobile optimization, service workers"
       },
       {
         "title": "TUfast for HTW (and other Universities)",
-        "tags": [
-          "Development",
-          "Product management",
-          "Project management"
-        ],
+        "tags": ["Development", "Product management", "Project management"],
         "content": "TUfast is great - students at the HTW also noticed that. Therefore, we would like to make TUfast available for HTW as well. This includes: Designing a software concept to integrate more universities and implementing it for HTW. \n\n Learning: Software design, web development, user oriented services"
       },
       {
         "title": "IT Security",
-        "tags": [
-          "IT Security",
-          "Development"
-        ],
+        "tags": ["IT Security", "Development"],
         "content": "You are interested in IT-Security? Perfect! We are looking for someone who looks into the security aspects of TUfast. We already got feedback and a scrutiny from the Informationssicherheit TU Dresden. In the future, we would like to evaluate security internally and implement measures accordingly. \n\n Learnings: IT security, Websecurity, Webdevelopment"
       },
       {
         "title": "TUfast Telemetry",
-        "tags": [
-          "Development",
-          "Product management"
-        ],
+        "tags": ["Development", "Product management"],
         "content": "We would like to collect anonymous usage data for TUfast to make the service even better. This data should be published on our website as well. Possible tools include Clickhouse or OpenTelemetry. \n\n Learnings: Product telemetry, back-end design and implementation"
       },
       {
         "title": "Marketing",
-        "tags": [
-          "Product management",
-          "Marketing"
-        ],
+        "tags": ["Product management", "Marketing"],
         "content": "We value marketing as a huge part of our project. Our goal is, to develop a clear brand communication and distribute TUfast to as many users as possible. You want to gather experience in marketing and brand communication? Then this is the perfect spot for you! \n\n Learnings: Design, brand communication, project responsibility"
       },
       {
         "title": "Project management",
-        "tags": [
-          "Product management",
-          "Project management"
-        ],
+        "tags": ["Product management", "Project management"],
         "content": "A team is only as good as its shared vision. In project management, you make sure that this vision is communicated and achieved. This includes looking for project sponsors, communication to project stake-holders and general project management. \n\n Learnings: Project responsibility, leading, handling stake-holders"
       }
     ]
