@@ -3,10 +3,9 @@ module.exports = {
   reactStrictMode: true,
   images: {
     domains: [
-      'hausdoerfer.de',
-      'www.gravatar.com',
-      'lennart.guderian.de',
-      'avatars.githubusercontent.com'
-    ]
-  }
-}
+      "hausdoerfer.de",
+      "www.gravatar.com",
+      "avatars.githubusercontent.com",
+    ],
+  },
+};

@@ -121,38 +121,63 @@ const Home: NextPage = () => {
       <div className={styles.mainWrapper}>
         <div id="home">
           <div className={styles.hero}>
+            <div className={styles.heroShortsWrapper}>
+              <div className={styles.heroShorts}>
+                {t("index.heroShortsPrice")}
+              </div>
+              <div className={styles.heroShorts}>
+                {t("index.heroShortsAuthor")}
+              </div>
+              <div className={styles.heroShorts}>
+                {t("index.heroShortsOpen")}
+              </div>
+            </div>
             <div className={styles.heroTitleWrapper}>
               <h1 className={styles.heroTitle}>
                 {t("index.mainHeadingTUfast")}
-              </h1>
-            </div>
-            <div className={styles.heroSubTextWrapper}>
-              <p className={styles.heroSubText}>
-                {t("index.subHeading")} <br />
-                {t("index.heroShorts")}
-              </p>
-            </div>
-            <a href={browser.url} target={"_blank"} rel="noreferrer">
-              <div className={styles.heroButton}>
-                <span className={styles.heroButtonText}>
-                  {t("index.installPrompt")}{" "}
-                  <img
-                    src={browser.icon}
-                    alt=""
-                    loading="lazy"
-                    className={styles.browserIcon}
-                  />{" "}
-                  {browser.name} {t("index.installPromptBehind")}
-                </span>
+              </h1>{" "}
+              <div className={styles.heroSubTextWrapper}>
+                <p className={styles.heroSubText}>{t("index.subHeading")}</p>
               </div>
-            </a>{" "}
-            <Markdown
-              className={styles.availableFor}
-              content={t("index.availableFor", {
-                firefox: browserList.firefox.url,
-                chrome: browserList.chrome.url,
-              })}
-            />
+            </div>
+            <div className={styles.heroActionsWrapper}>
+              <a
+                href={browser.url}
+                target={"_blank"}
+                rel="noreferrer"
+                className={styles.heroButtonLink}
+              >
+                <div className={styles.heroButton}>
+                  <span className={styles.heroButtonText}>
+                    {t("index.installPrompt")}{" "}
+                    <img
+                      src={browser.icon}
+                      alt=""
+                      loading="lazy"
+                      className={styles.browserIcon}
+                    />{" "}
+                    {browser.name} {t("index.installPromptBehind")}
+                  </span>
+                </div>
+              </a>{" "}
+              <Markdown
+                className={styles.availableFor}
+                content={t("index.availableFor", {
+                  firefox: browserList.firefox.url,
+                  chrome: browserList.chrome.url,
+                })}
+              />
+              <a
+                href="https://addons.mozilla.org/de/firefox/addon/tufast/"
+                target="_blank"
+                rel="noreferrer"
+                className={styles.newFeatureHintLink}
+              >
+                <div className={styles.newFeatureHint}>
+                  🔥 {t("index.newFeatureHint")}
+                </div>
+              </a>
+            </div>
           </div>
         </div>
         <div>

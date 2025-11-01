@@ -59,7 +59,7 @@ const Team = () => {
 
                   tempImg.onload = () => {
                     clearTimeout(timeoutId);
-                    if (img) {
+                    if (img && member.image) {
                       img.src = member.image;
                     }
                   };
@@ -83,7 +83,12 @@ const Team = () => {
         }
         actions={member.links.map((link, i) => (
           <Link key={i} href={link.url} passHref>
-            <a style={{ color: "#000b" }} title={link.title} target="_blank">
+            <a
+              style={{ color: "#000b" }}
+              title={link.title}
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className={styles.teamCardAction}>
                 <LinkIcon icon={link.type} />
                 {link.title}
